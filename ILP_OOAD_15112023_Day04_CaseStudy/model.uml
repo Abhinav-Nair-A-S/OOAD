@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_p_FU4IRdEe6N58E1oZYV2w" name="model">
+    <eAnnotations xmi:id="_tHvu8IRdEe6N58E1oZYV2w" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_tHwWAIRdEe6N58E1oZYV2w" source="codegen">
+        <details xmi:id="_tHwWAYRdEe6N58E1oZYV2w" key="codegenDirectory" value="/ILP_OOAD_15112023_Day04_CaseStudy/src"/>
+        <details xmi:id="_tRSFcIRdEe6N58E1oZYV2w" key="AssociatedSourceCode" value="/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/Account.java;3139070728/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/CurrentAccount.java;4063028501/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/Customer.java;3497477175/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/LoanAccount.java;728486733/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/Product.java;2397297820/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/SavingsMaxAccount.java;914539023/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/entity/Service.java;1617007995/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/service/AccountManager.java;2993578698/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/service/CustomerAccountConfiguration.java;1532699654/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/service/ProductConfiguration.java;991013753/1;/ILP_OOAD_15112023_Day04_CaseStudy/src/com/ilp/utility/BankingUtility.java;3109004900/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_tHyLMIRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_tHyyQIRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_tHyyQYRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_tHyyQoRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_tHyyQ4RdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_tHzZUIRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_tHzZUYRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_tHzZUoRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_tH0AYIRdEe6N58E1oZYV2w">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tGyFoIRdEe6N58E1oZYV2w" name="com">
+      <packagedElement xmi:type="uml:Package" xmi:id="_tGz60IRdEe6N58E1oZYV2w" name="ilp">
+        <packagedElement xmi:type="uml:Package" xmi:id="_tG6BcIRdEe6N58E1oZYV2w" name="entity">
+          <packagedElement xmi:type="uml:Class" xmi:id="_tHoaMIRdEe6N58E1oZYV2w" name="Account">
+            <ownedAttribute xmi:id="_tK_3QIRdEe6N58E1oZYV2w" name="accountNo" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLAeUIRdEe6N58E1oZYV2w" name="accountBalance" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLBFYIRdEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w" association="_tLWckIRdEe6N58E1oZYV2w">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OAxtkIR2Ee6N58E1oZYV2w" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAwfcIR2Ee6N58E1oZYV2w" value="1"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLOgwIRdEe6N58E1oZYV2w" name="Account" specification="_tKWXAIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_6ElpwIRmEe6N58E1oZYV2w" type="_tHoaMIRdEe6N58E1oZYV2w" direction="return"/>
+              <ownedParameter xmi:id="_6ElpwYRmEe6N58E1oZYV2w" name="accountNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_6ElpwoRmEe6N58E1oZYV2w" name="accountBalance">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_6Elpw4RmEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>this.accountNo = accountNo;&#xD;
+		this.accountBalance = accountBalance;&#xD;
+		this.product = product;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tKWXAIRdEe6N58E1oZYV2w" name="Account" method="_tLOgwIRdEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_tKW-EoRdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_tKW-E4RdEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_tKW-FIRdEe6N58E1oZYV2w" type="_tHoaMIRdEe6N58E1oZYV2w" direction="return"/>
+              <ownedParameter xmi:id="_tKWXAYRdEe6N58E1oZYV2w" name="accountNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKW-EIRdEe6N58E1oZYV2w" name="accountBalance">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKW-EYRdEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_6R3PwIRxEe6N58E1oZYV2w" name="getAccountNo">
+              <ownedParameter xmi:id="_6R3PwYRxEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_7udwoIRxEe6N58E1oZYV2w" name="getAccountBalance">
+              <ownedParameter xmi:id="_7udwoYRxEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_9p6wsIRxEe6N58E1oZYV2w" name="setAccountNo">
+              <ownedParameter xmi:id="_9p6wsYRxEe6N58E1oZYV2w" name="accountNo">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_RCIikIRyEe6N58E1oZYV2w" name="setAccountBalance">
+              <ownedParameter xmi:id="_RCIikYRyEe6N58E1oZYV2w" name="accountBalance">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tH444IRdEe6N58E1oZYV2w" name="CurrentAccount">
+            <generalization xmi:id="_tKaBYIRdEe6N58E1oZYV2w" general="_tIANoIRdEe6N58E1oZYV2w"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLQV8IRdEe6N58E1oZYV2w" name="CurrentAccount" specification="_tKs8UIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLQV8YRdEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLQV8oRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLQV84RdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLQV9IRdEe6N58E1oZYV2w" type="_tH444IRdEe6N58E1oZYV2w" direction="return"/>
+              <language>java</language>
+              <body>super(productCode, productName, serviceList);&#xD;
+		// TODO Auto-generated constructor stub&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tKs8UIRdEe6N58E1oZYV2w" name="CurrentAccount" method="_tLQV8IRdEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_tKs8VIRdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_tKs8VYRdEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_tKs8UYRdEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKs8UoRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKs8U4RdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tKs8VoRdEe6N58E1oZYV2w" type="_tH444IRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tH6uEIRdEe6N58E1oZYV2w" name="Customer">
+            <ownedAttribute xmi:id="_tLBFYYRdEe6N58E1oZYV2w" name="customerCode" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLBscIRdEe6N58E1oZYV2w" name="customerName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLBscYRdEe6N58E1oZYV2w" name="accountList" visibility="private" type="_tHoaMIRdEe6N58E1oZYV2w" association="_tLZf4IRdEe6N58E1oZYV2w">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v2R6UIR0Ee6N58E1oZYV2w" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v2RTQIR0Ee6N58E1oZYV2w" value="*"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLQ9AIRdEe6N58E1oZYV2w" name="Customer" specification="_tKvYkIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLQ9AYRdEe6N58E1oZYV2w" name="customerCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLQ9AoRdEe6N58E1oZYV2w" name="customerName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLQ9A4RdEe6N58E1oZYV2w" name="accountList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLQ9BIRdEe6N58E1oZYV2w" type="_tH6uEIRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>this.customerCode = customerCode;&#xD;
+		this.customerName = customerName;&#xD;
+		this.accountList = accountList;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tKvYkIRdEe6N58E1oZYV2w" name="Customer" method="_tLQ9AIRdEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_tKv_o4RdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_tKv_pIRdEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_tKv_oIRdEe6N58E1oZYV2w" name="customerCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKv_oYRdEe6N58E1oZYV2w" name="customerName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKv_ooRdEe6N58E1oZYV2w" name="accountList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tKv_pYRdEe6N58E1oZYV2w" type="_tH6uEIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_29hUsIRyEe6N58E1oZYV2w" name="getCustomerCode">
+              <ownedParameter xmi:id="_29hUsYRyEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_5cyzgIRyEe6N58E1oZYV2w" name="getCustomerName">
+              <ownedParameter xmi:id="_5cyzgYRyEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_7eTYQIRyEe6N58E1oZYV2w" name="getAccountList">
+              <ownedParameter xmi:id="_7eTYQYRyEe6N58E1oZYV2w" type="_tKYMMIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_AtidQIRzEe6N58E1oZYV2w" name="setCustomerCode">
+              <ownedParameter xmi:id="_AtidQYRzEe6N58E1oZYV2w" name="customerCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_DMsnUIRzEe6N58E1oZYV2w" name="setCustomerName">
+              <ownedParameter xmi:id="_DMsnUYRzEe6N58E1oZYV2w" name="customerName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_F9LK4IRzEe6N58E1oZYV2w" name="setAccountList">
+              <ownedParameter xmi:id="_F9Lx8IRzEe6N58E1oZYV2w" name="accountList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tH9xYIRdEe6N58E1oZYV2w" name="LoanAccount">
+            <generalization xmi:id="_tKdEsIRdEe6N58E1oZYV2w" general="_tIANoIRdEe6N58E1oZYV2w"/>
+            <ownedAttribute xmi:id="_tLDhoIRdEe6N58E1oZYV2w" name="serviceRate" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLRkEIRdEe6N58E1oZYV2w" name="LoanAccount" specification="_tKx00IRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLRkEYRdEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLRkEoRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLRkE4RdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLRkFIRdEe6N58E1oZYV2w" name="serviceRate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLRkFYRdEe6N58E1oZYV2w" type="_tH9xYIRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>super(productCode, productName, serviceList);&#xD;
+		this.serviceRate = serviceRate;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tKx00IRdEe6N58E1oZYV2w" name="LoanAccount" method="_tLRkEIRdEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_tKyb44RdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_tKyb5IRdEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_tKx00YRdEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKyb4IRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKyb4YRdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tKyb4oRdEe6N58E1oZYV2w" name="serviceRate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKyb5YRdEe6N58E1oZYV2w" type="_tH9xYIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_UtCRkIRzEe6N58E1oZYV2w" name="getServiceRate">
+              <ownedParameter xmi:id="_UtCRkYRzEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_XRmgEIRzEe6N58E1oZYV2w" name="setServiceRate">
+              <ownedParameter xmi:id="_XRmgEYRzEe6N58E1oZYV2w" name="serviceRate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tIANoIRdEe6N58E1oZYV2w" name="Product">
+            <ownedAttribute xmi:id="_tLDhoYRdEe6N58E1oZYV2w" name="productCode" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLDhooRdEe6N58E1oZYV2w" name="productName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_HLQlEIRnEe6N58E1oZYV2w" name="Product" specification="_HLP-AIRnEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_HLQlEYRnEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_HLQlEoRnEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_HLQlE4RnEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_HLQlFIRnEe6N58E1oZYV2w" type="_tIANoIRdEe6N58E1oZYV2w" direction="return"/>
+              <language>java</language>
+              <body>this.productCode = productCode;&#xD;
+		this.productName = productName;&#xD;
+		this.serviceList = serviceList;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_HLP-AIRnEe6N58E1oZYV2w" name="Product" method="_HLQlEIRnEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_HLP-BYRnEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_HLP-BoRnEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_HLP-AYRnEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_HLP-AoRnEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_HLP-A4RnEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_HLP-BIRnEe6N58E1oZYV2w" type="_tIANoIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_boRQQIRxEe6N58E1oZYV2w" name="getProductCode">
+              <ownedParameter xmi:id="_boRQQYRxEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_doA6cIRxEe6N58E1oZYV2w" name="getProductName">
+              <ownedParameter xmi:id="_doA6cYRxEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_gZKMYIRxEe6N58E1oZYV2w" name="getServiceList">
+              <ownedParameter xmi:id="_gZKMYYRxEe6N58E1oZYV2w" type="_tKYMMIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_icvNsIRxEe6N58E1oZYV2w" name="setProductCode">
+              <ownedParameter xmi:id="_icv0wIRxEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_ktpgYIRxEe6N58E1oZYV2w" name="setProductName">
+              <ownedParameter xmi:id="_ktpgYYRxEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_0zbRIIRxEe6N58E1oZYV2w" name="setServiceList">
+              <ownedParameter xmi:id="_0zb4MIRxEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tIDQ8IRdEe6N58E1oZYV2w" name="SavingsMaxAccount">
+            <generalization xmi:id="_tKfg8IRdEe6N58E1oZYV2w" general="_tIANoIRdEe6N58E1oZYV2w"/>
+            <ownedAttribute xmi:id="_tLFW0IRdEe6N58E1oZYV2w" name="minimumBalance" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLSLIIRdEe6N58E1oZYV2w" name="SavingsMaxAccount" specification="_tK3UYIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLSLIYRdEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLSLIoRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLSLI4RdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLSLJIRdEe6N58E1oZYV2w" name="minimumBalance">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLSLJYRdEe6N58E1oZYV2w" type="_tIDQ8IRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>super(productCode, productName, serviceList);&#xD;
+		this.setMinimumBalance(minimumBalance);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tK3UYIRdEe6N58E1oZYV2w" name="SavingsMaxAccount" method="_tLSLIIRdEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_tK37cIRdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_tK37cYRdEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_tK3UYYRdEe6N58E1oZYV2w" name="productCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tK3UYoRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tK3UY4RdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tK3UZIRdEe6N58E1oZYV2w" name="minimumBalance">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tK37coRdEe6N58E1oZYV2w" type="_tIDQ8IRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Nq0zEIRzEe6N58E1oZYV2w" name="getMinimumBalance">
+              <ownedParameter xmi:id="_Nq0zEYRzEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_Q65csIRzEe6N58E1oZYV2w" name="setMinimumBalance">
+              <ownedParameter xmi:id="_Q65csYRzEe6N58E1oZYV2w" name="minimumBalance">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tIFGIIRdEe6N58E1oZYV2w" name="Service">
+            <ownedAttribute xmi:id="_tLFW0YRdEe6N58E1oZYV2w" name="serviceCode" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLFW0oRdEe6N58E1oZYV2w" name="serviceName" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLF94IRdEe6N58E1oZYV2w" name="serviceRate" visibility="private">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLSyMIRdEe6N58E1oZYV2w" name="Service" specification="_tIG7UIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLSyMYRdEe6N58E1oZYV2w" name="serviceCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLSyMoRdEe6N58E1oZYV2w" name="serviceName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLSyM4RdEe6N58E1oZYV2w" name="serviceRate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLSyNIRdEe6N58E1oZYV2w" type="_tIFGIIRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>this.serviceCode = serviceCode;&#xD;
+		this.serviceName = serviceName;&#xD;
+		this.serviceRate = serviceRate;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tIG7UIRdEe6N58E1oZYV2w" name="Service" method="_tLSyMIRdEe6N58E1oZYV2w">
+              <eAnnotations xmi:id="_tIIwgIRdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_tIIwgYRdEe6N58E1oZYV2w" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_tIHiYIRdEe6N58E1oZYV2w" name="serviceCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tIHiYYRdEe6N58E1oZYV2w" name="serviceName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tIHiYoRdEe6N58E1oZYV2w" name="serviceRate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tIIwgoRdEe6N58E1oZYV2w" type="_tIFGIIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_TdIlYIRyEe6N58E1oZYV2w" name="getServiceCode">
+              <ownedParameter xmi:id="_TdIlYYRyEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_VbjZ4IRyEe6N58E1oZYV2w" name="getServiceName">
+              <ownedParameter xmi:id="_VbjZ4YRyEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_X0bVwIRyEe6N58E1oZYV2w" name="getServiceRate">
+              <ownedParameter xmi:id="_X0b80IRyEe6N58E1oZYV2w" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cS6TQIRyEe6N58E1oZYV2w" name="setServiceCode">
+              <ownedParameter xmi:id="_cS6TQYRyEe6N58E1oZYV2w" name="serviceCode">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_iYFhwIRyEe6N58E1oZYV2w" name="setServiceName">
+              <ownedParameter xmi:id="_iYGI0IRyEe6N58E1oZYV2w" name="serviceName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_kxjTgIRyEe6N58E1oZYV2w" name="setServiceRate">
+              <ownedParameter xmi:id="_kxjTgYRyEe6N58E1oZYV2w" name="serviceRate">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_tLWckIRdEe6N58E1oZYV2w" name="" memberEnd="_tLBFYIRdEe6N58E1oZYV2w _tLWckYRdEe6N58E1oZYV2w">
+            <ownedEnd xmi:id="_tLWckYRdEe6N58E1oZYV2w" name="" type="_tHoaMIRdEe6N58E1oZYV2w" association="_tLWckIRdEe6N58E1oZYV2w">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_OAxGgIR2Ee6N58E1oZYV2w" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_OAv4YIR2Ee6N58E1oZYV2w" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_tLZf4IRdEe6N58E1oZYV2w" name="" memberEnd="_tLZf4YRdEe6N58E1oZYV2w _tLBscYRdEe6N58E1oZYV2w">
+            <ownedEnd xmi:id="_tLZf4YRdEe6N58E1oZYV2w" name="" type="_tH6uEIRdEe6N58E1oZYV2w" association="_tLZf4IRdEe6N58E1oZYV2w">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v2TvgIR0Ee6N58E1oZYV2w" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v2RTQYR0Ee6N58E1oZYV2w" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_tLauAYRdEe6N58E1oZYV2w" name="" memberEnd="_tLbVEIRdEe6N58E1oZYV2w _tLEIsIRdEe6N58E1oZYV2w">
+            <ownedEnd xmi:id="_tLEIsIRdEe6N58E1oZYV2w" name="serviceList" visibility="private" type="_tIFGIIRdEe6N58E1oZYV2w" association="_tLauAYRdEe6N58E1oZYV2w">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dj1dsIR0Ee6N58E1oZYV2w" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djyaYIR0Ee6N58E1oZYV2w" value="*"/>
+            </ownedEnd>
+            <ownedEnd xmi:id="_tLbVEIRdEe6N58E1oZYV2w" name="" type="_tIANoIRdEe6N58E1oZYV2w" association="_tLauAYRdEe6N58E1oZYV2w">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dj2r0IR0Ee6N58E1oZYV2w" value="1"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_djzogIR0Ee6N58E1oZYV2w" value="1"/>
+            </ownedEnd>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tHP_sIRdEe6N58E1oZYV2w" name="service">
+          <packagedElement xmi:type="uml:Class" xmi:id="_tIJ-oIRdEe6N58E1oZYV2w" name="AccountManager">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLTZQIRdEe6N58E1oZYV2w" name="cashDeposit" specification="_tKjLUIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLTZQYRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLTZQoRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		LoanAccount loanAccount = null;&#xD;
+		double cashDepositAmount, accountBalance;&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		for (Account account : customer.getAccountList()) {&#xD;
+			if (account != null) {&#xD;
+				if (account.getProduct().getProductName().compareTo(productName) == 0) {&#xD;
+					if (account.getProduct() instanceof LoanAccount) {&#xD;
+						loanAccount = (LoanAccount) account.getProduct();&#xD;
+						System.out.println(&quot;\nEnter the amount you want to deposit : &quot;);&#xD;
+						cashDepositAmount = scanner.nextDouble();&#xD;
+						System.out.println(&quot;Is the cash deposit via Cheque [y/n] : &quot;);&#xD;
+						char answer = scanner.next().charAt(0);&#xD;
+						if (answer == 'y') {&#xD;
+							double newDepositAmount = cashDepositAmount&#xD;
+									- (cashDepositAmount * (loanAccount.getServiceRate() / 100));&#xD;
+							accountBalance = account.getAccountBalance();&#xD;
+							accountBalance += newDepositAmount;&#xD;
+							account.setAccountBalance(accountBalance);&#xD;
+						} else {&#xD;
+							accountBalance = account.getAccountBalance();&#xD;
+							accountBalance += cashDepositAmount;&#xD;
+							account.setAccountBalance(accountBalance);&#xD;
+						}&#xD;
+					} else {&#xD;
+						System.out.println(&quot;\nEnter the amount you want to deposit : &quot;);&#xD;
+						cashDepositAmount = scanner.nextDouble();&#xD;
+						accountBalance = account.getAccountBalance();&#xD;
+						accountBalance += cashDepositAmount;&#xD;
+						account.setAccountBalance(accountBalance);&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLTZQ4RdEe6N58E1oZYV2w" name="cashWithdrawal" specification="_tKjyYIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLTZRIRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tLTZRYRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		SavingsMaxAccount savingsMaxAccount = null;&#xD;
+		double cashWithdrawalAmount, accountBalance, newAccountBalance;&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		for (Account account : customer.getAccountList()) {&#xD;
+			if (account != null) {&#xD;
+				if (account.getProduct().getProductName().compareTo(productName) == 0) {&#xD;
+					if (account.getProduct() instanceof SavingsMaxAccount) {&#xD;
+						savingsMaxAccount = (SavingsMaxAccount) account.getProduct();&#xD;
+						System.out.println(&quot;\nEnter the amount you want to withdraw : &quot;);&#xD;
+						cashWithdrawalAmount = scanner.nextDouble();&#xD;
+						accountBalance = account.getAccountBalance();&#xD;
+						newAccountBalance = accountBalance - cashWithdrawalAmount;&#xD;
+						if ((accountBalance >= savingsMaxAccount.getMinimumBalance())&#xD;
+								&amp;&amp; (newAccountBalance >= savingsMaxAccount.getMinimumBalance()))&#xD;
+							account.setAccountBalance(newAccountBalance);&#xD;
+						else&#xD;
+							System.out.println(&quot;\nNo sufficient minimum balance in your savings account!&quot;);&#xD;
+					} else {&#xD;
+						System.out.println(&quot;\nEnter the amount you want to withdraw : &quot;);&#xD;
+						cashWithdrawalAmount = scanner.nextDouble();&#xD;
+						accountBalance = account.getAccountBalance();&#xD;
+						newAccountBalance = accountBalance - cashWithdrawalAmount;&#xD;
+						if ((accountBalance >= 0) &amp;&amp; (newAccountBalance >= 0))&#xD;
+							account.setAccountBalance(newAccountBalance);&#xD;
+						else&#xD;
+							System.out.println(&quot;\nNo sufficient balance in account!&quot;);&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iUCp4IRfEe6N58E1oZYV2w" name="manageAccount" specification="_iT_mkIRfEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_iUCp4YRfEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		SavingsMaxAccount savingsMaxAccount = null;&#xD;
+		CurrentAccount currentAccount = null;&#xD;
+		LoanAccount loanAccount = null;&#xD;
+&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		System.out.println(&quot;\nEnter Cutomer ID : &quot;);&#xD;
+		String customerCode = scanner.nextLine();&#xD;
+		if (customerCode.compareTo(customerCode) == 0) {&#xD;
+			System.out.println(&quot;\n&quot; + customer.getCustomerName() + &quot; has the following accounts : &quot;);&#xD;
+			for (Account account : customer.getAccountList()) {&#xD;
+				if (account != null) {&#xD;
+					if (account.getProduct() instanceof SavingsMaxAccount) {&#xD;
+						savingsMaxAccount = (SavingsMaxAccount) account.getProduct();&#xD;
+						System.out.println(savingsMaxAccount.getProductName());&#xD;
+					} else if (account.getProduct() instanceof CurrentAccount) {&#xD;
+						currentAccount = (CurrentAccount) account.getProduct();&#xD;
+						System.out.println(currentAccount.getProductName());&#xD;
+					} else if (account.getProduct() instanceof LoanAccount) {&#xD;
+						loanAccount = (LoanAccount) account.getProduct();&#xD;
+						System.out.println(loanAccount.getProductName());&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+			System.out.println(&quot;\nEnter your choice : &quot;);&#xD;
+			String productName = scanner.nextLine();&#xD;
+			char continueChoice;&#xD;
+			do {&#xD;
+				System.out.println(&quot;\n1. Cash Deposit\n2. Cash Withdrawal\n3. Display Balance\n\nEnter you choice&quot;);&#xD;
+				int manageAccountChoice = scanner.nextInt();&#xD;
+				switch (manageAccountChoice) {&#xD;
+				case 1:&#xD;
+					cashDeposit(productName, customer);&#xD;
+					break;&#xD;
+				case 2:&#xD;
+					cashWithdrawal(productName, customer);&#xD;
+					break;&#xD;
+				case 3:&#xD;
+					CustomerAccountConfiguration.displayCustomer(customer);&#xD;
+					break;&#xD;
+				}&#xD;
+				System.out.println(&quot;\nDo you want to continue [y/n] : &quot;);&#xD;
+				continueChoice = scanner.next().charAt(0);&#xD;
+			} while (continueChoice == 'y');&#xD;
+		}&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tKjLUIRdEe6N58E1oZYV2w" name="cashDeposit" visibility="private" isStatic="true" method="_tLTZQIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tKjLUYRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKjLUoRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_tKjyYIRdEe6N58E1oZYV2w" name="cashWithdrawal" visibility="private" isStatic="true" method="_tLTZQ4RdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tKjyYYRdEe6N58E1oZYV2w" name="productName">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_tKjyYoRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_iT_mkIRfEe6N58E1oZYV2w" name="manageAccount" isStatic="true" method="_iUCp4IRfEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_iUANoIRfEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tINB8IRdEe6N58E1oZYV2w" name="CustomerAccountConfiguration">
+            <ownedAttribute xmi:id="_tLF94YRdEe6N58E1oZYV2w" name="accountList" visibility="package" isStatic="true" type="_tKYMMIRdEe6N58E1oZYV2w" association="_tLcjMIRdEe6N58E1oZYV2w">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_tLHMAYRdEe6N58E1oZYV2w" value="new ArrayList&lt;Account>()"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_tLIaIIRdEe6N58E1oZYV2w" name="customerName" visibility="package" isStatic="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_tLIaIYRdEe6N58E1oZYV2w" value="null"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLTZRoRdEe6N58E1oZYV2w" name="createCustomer" specification="_tK6XsIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLTZR4RdEe6N58E1oZYV2w" name="productList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLTZSIRdEe6N58E1oZYV2w" name="customerOld" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLTZSYRdEe6N58E1oZYV2w" type="_tH6uEIRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		Product selectedProduct = null;&#xD;
+		String customerCode = null;&#xD;
+		Customer customer = null;&#xD;
+		System.out.println(&quot;\nThe Availabe Products are : &quot;);&#xD;
+		int i = 1;&#xD;
+		for (Product product : productList) {&#xD;
+			System.out.println(i + &quot;. &quot; + product.getProductName());&#xD;
+			i++;&#xD;
+		}&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		System.out.println(&quot;\nEnter the product you want : &quot;);&#xD;
+		String productName = scanner.nextLine();&#xD;
+		for (Product product : productList)&#xD;
+			if (product.getProductName().compareTo(productName) == 0)&#xD;
+				selectedProduct = product;&#xD;
+		if (customerOld == null) {&#xD;
+			System.out.println(&quot;\nEnter the customer code : &quot;);&#xD;
+			customerCode = scanner.nextLine();&#xD;
+			System.out.println(&quot;Enter the customer name : &quot;);&#xD;
+			customerName = scanner.nextLine();&#xD;
+			accountList.add(createAccount(selectedProduct));&#xD;
+			customer = new Customer(customerCode, customerName, accountList);&#xD;
+		} else&#xD;
+			accountList.add(createAccount(selectedProduct));&#xD;
+		if (customerOld == null)&#xD;
+			return customer;&#xD;
+		else&#xD;
+			return customerOld;&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLUAUIRdEe6N58E1oZYV2w" name="createAccount" specification="_tKlnkIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_sY78oIRnEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_sY78oYRnEe6N58E1oZYV2w" type="_tHoaMIRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		SavingsMaxAccount savingsMaxAccount = null;&#xD;
+		CurrentAccount currentAccount = null;&#xD;
+		LoanAccount loanAccount = null;&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		System.out.println(&quot;\nEnter the Account No : &quot;);&#xD;
+		String accountNo = scanner.nextLine();&#xD;
+		System.out.println(&quot;Enter the Opening Balance : &quot;);&#xD;
+		double balance = scanner.nextDouble();&#xD;
+		if (product.getProductName().compareTo(&quot;Savings Max Account&quot;) == 0) {&#xD;
+			if (balance &lt; 1000)&#xD;
+				System.out.println(&quot;\nAmount less than minimum balance. Try Again&quot;);&#xD;
+			else {&#xD;
+				savingsMaxAccount = new SavingsMaxAccount(product.getProductCode(), product.getProductName(),&#xD;
+						product.getServiceList(), 1000);&#xD;
+				product = savingsMaxAccount;&#xD;
+				displayservices(product);&#xD;
+			}&#xD;
+		} else if (product.getProductName().compareTo(&quot;Current Account&quot;) == 0) {&#xD;
+			currentAccount = new CurrentAccount(product.getProductCode(), product.getProductName(),&#xD;
+					product.getServiceList());&#xD;
+			product = currentAccount;&#xD;
+			displayservices(product);&#xD;
+		} else if (product.getProductName().compareTo(&quot;Loan Account&quot;) == 0) {&#xD;
+			loanAccount = new LoanAccount(product.getProductCode(), product.getProductName(), product.getServiceList(),&#xD;
+					0.3);&#xD;
+			product = loanAccount;&#xD;
+			displayservices(product);&#xD;
+		}&#xD;
+		if (product.getProductName().compareTo(&quot;Savings Max Account&quot;) == 0) {&#xD;
+			if (balance >= 1000)&#xD;
+				return new Account(accountNo, balance, product);&#xD;
+			else&#xD;
+				return null;&#xD;
+		} else&#xD;
+			return new Account(accountNo, balance, product);&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLUAU4RdEe6N58E1oZYV2w" name="displayservices" specification="_tKmOoYRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLUAVIRdEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		SavingsMaxAccount savingsMaxAccount = null;&#xD;
+		CurrentAccount currentAccount = null;&#xD;
+		LoanAccount loanAccount = null;&#xD;
+&#xD;
+		if (product instanceof SavingsMaxAccount) {&#xD;
+			savingsMaxAccount = (SavingsMaxAccount) product;&#xD;
+			System.out.println(&quot;\n&quot; + customerName + &quot; has created &quot; + savingsMaxAccount.getProductName()&#xD;
+					+ &quot; with the followong services : &quot;);&#xD;
+			for (Service service : savingsMaxAccount.getServiceList())&#xD;
+				System.out.println(service.getServiceName());&#xD;
+			System.out.println(&quot;\nAccount Active!!&quot;);&#xD;
+		} else if (product instanceof CurrentAccount) {&#xD;
+			currentAccount = (CurrentAccount) product;&#xD;
+			System.out.println(&quot;\n&quot; + customerName + &quot; has created &quot; + currentAccount.getProductName()&#xD;
+					+ &quot; with the followong services : &quot;);&#xD;
+			for (Service service : currentAccount.getServiceList())&#xD;
+				System.out.println(service.getServiceName());&#xD;
+			System.out.println(&quot;\nAccount Active!!&quot;);&#xD;
+		} else if (product instanceof LoanAccount) {&#xD;
+			loanAccount = (LoanAccount) product;&#xD;
+			System.out.println(&quot;\n&quot; + customerName + &quot; has created &quot; + loanAccount.getProductName()&#xD;
+					+ &quot; with the followong services : &quot;);&#xD;
+			for (Service service : loanAccount.getServiceList())&#xD;
+				System.out.println(service.getServiceName());&#xD;
+			System.out.println(&quot;\nAccount Active!!&quot;);&#xD;
+		}&#xD;
+&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLUAVYRdEe6N58E1oZYV2w" name="displayCustomer" specification="_tKm1sIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLUAVoRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		SavingsMaxAccount savingsMaxAccount = null;&#xD;
+		CurrentAccount currentAccount = null;&#xD;
+		LoanAccount loanAccount = null;&#xD;
+&#xD;
+		System.out.println(&quot;\n\n*************************Customer-Account Details****************&quot;);&#xD;
+		System.out.println(&quot;CustomerId &quot; + &quot; CustomerName &quot; + &quot; AccountType &quot; + &quot; Balance&quot;);&#xD;
+		System.out.println(&quot;***************************************************************&quot;);&#xD;
+		for (Account account : accountList) {&#xD;
+			if (account != null) {&#xD;
+				if (account.getProduct() instanceof SavingsMaxAccount) {&#xD;
+					savingsMaxAccount = (SavingsMaxAccount) account.getProduct();&#xD;
+					System.out.println(&quot;\n&quot; + customer.getCustomerCode() + &quot;     &quot; + customer.getCustomerName()&#xD;
+							+ &quot;     &quot; + savingsMaxAccount.getProductName() + &quot;     &quot; + account.getAccountBalance());&#xD;
+					System.out.println(&quot;Services Provided&quot;);&#xD;
+					for (Service service : savingsMaxAccount.getServiceList())&#xD;
+						System.out.print(service.getServiceName() + &quot;   &quot;);&#xD;
+				} else if (account.getProduct() instanceof CurrentAccount) {&#xD;
+					currentAccount = (CurrentAccount) account.getProduct();&#xD;
+					System.out.println(&quot;\n&quot; + customer.getCustomerCode() + &quot;     &quot; + customer.getCustomerName()&#xD;
+							+ &quot;     &quot; + currentAccount.getProductName() + &quot;     &quot; + account.getAccountBalance());&#xD;
+					System.out.println(&quot;Services Provided&quot;);&#xD;
+					for (Service service : currentAccount.getServiceList())&#xD;
+						System.out.print(service.getServiceName() + &quot;   &quot;);&#xD;
+				} else if (account.getProduct() instanceof LoanAccount) {&#xD;
+					loanAccount = (LoanAccount) account.getProduct();&#xD;
+					System.out.println(&quot;\n&quot; + customer.getCustomerCode() + &quot;     &quot; + customer.getCustomerName()&#xD;
+							+ &quot;     &quot; + loanAccount.getProductName() + &quot;     &quot; + account.getAccountBalance());&#xD;
+					System.out.println(&quot;Services Provided&quot;);&#xD;
+					for (Service service : loanAccount.getServiceList())&#xD;
+						System.out.print(service.getServiceName() + &quot;   &quot;);&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLUnYIRdEe6N58E1oZYV2w" name="transaction" specification="_tKncwIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLUnYYRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		System.out.println(&quot;Enter Customer Code : &quot;);&#xD;
+		String customerCode = scanner.nextLine();&#xD;
+		if (customerCode.compareTo(customer.getCustomerCode()) == 0) {&#xD;
+			System.out.println(&quot;\n&quot; + customer.getCustomerName() + &quot; has the following accounts : &quot;);&#xD;
+			int i = 1;&#xD;
+			for (Account account : accountList) {&#xD;
+				if (account != null) {&#xD;
+					System.out.println(i + &quot;. &quot; + account.getProduct().getProductCode() + &quot;   &quot;&#xD;
+							+ account.getProduct().getProductName());&#xD;
+					i++;&#xD;
+				}&#xD;
+			}&#xD;
+			System.out.println(&quot;\nEnter the product code you want to choose : &quot;);&#xD;
+			String accountChoice = scanner.nextLine();&#xD;
+			for (Account account : accountList) {&#xD;
+				if (account != null) {&#xD;
+					if (account.getProduct().getProductCode().compareTo(accountChoice) == 0) {&#xD;
+						int j = 1;&#xD;
+						System.out.println(&quot;\nThe Services available are : &quot;);&#xD;
+						for (Service service : account.getProduct().getServiceList()) {&#xD;
+							System.out.println(j + &quot;. &quot; + service.getServiceCode() + &quot;    &quot; + service.getServiceName());&#xD;
+							j++;&#xD;
+						}&#xD;
+						System.out.println(&quot;\nEnter the service code you want to choose : &quot;);&#xD;
+						String serviceChoice = scanner.nextLine();&#xD;
+						for (Service service : account.getProduct().getServiceList())&#xD;
+							if (service.getServiceCode().compareTo(serviceChoice) == 0) {&#xD;
+								System.out.println(&quot;\nEnter the number of transactions : &quot;);&#xD;
+								int noOfTransactions = scanner.nextInt();&#xD;
+								System.out.println(&#xD;
+										&quot;\nTotal Service Amount : &quot; + service.getServiceRate() * noOfTransactions);&#xD;
+							}&#xD;
+					}&#xD;
+				}&#xD;
+			}&#xD;
+		}&#xD;
+	&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tKlnkIRdEe6N58E1oZYV2w" name="createAccount" isStatic="true" method="_tLUAUIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tKlnkYRdEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tKmOoIRdEe6N58E1oZYV2w" type="_tHoaMIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_tKmOoYRdEe6N58E1oZYV2w" name="displayservices" visibility="private" isStatic="true" method="_tLUAU4RdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tKmOooRdEe6N58E1oZYV2w" name="product" type="_tIANoIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_tKm1sIRdEe6N58E1oZYV2w" name="displayCustomer" isStatic="true" method="_tLUAVYRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tKm1sYRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_tKncwIRdEe6N58E1oZYV2w" name="transaction" isStatic="true" method="_tLUnYIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tKncwYRdEe6N58E1oZYV2w" name="customer" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_tK6XsIRdEe6N58E1oZYV2w" name="createCustomer" isStatic="true" method="_tLTZRoRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tK6XsYRdEe6N58E1oZYV2w" name="productList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tK6XsoRdEe6N58E1oZYV2w" name="customerOld" type="_tH6uEIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tK6-wIRdEe6N58E1oZYV2w" type="_tH6uEIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_tIShgIRdEe6N58E1oZYV2w" name="ProductConfiguration">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLUnYoRdEe6N58E1oZYV2w" name="createServices" specification="_tITIkIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLUnY4RdEe6N58E1oZYV2w" type="_tKYMMIRdEe6N58E1oZYV2w" direction="return"/>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+		&#xD;
+		ArrayList&lt;Service> serviceList = new ArrayList&lt;Service>();&#xD;
+		String serviceCode,serviceName;&#xD;
+		float serviceRate;&#xD;
+		char continueChoice;&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		do {&#xD;
+			System.out.println(&quot;\nEnter Service Code : &quot;);&#xD;
+			serviceCode = scanner.nextLine();&#xD;
+			System.out.println(&quot;Enter Service Name : &quot;);&#xD;
+			serviceName = scanner.nextLine();	&#xD;
+			System.out.println(&quot;Enter Service Rate : &quot;);&#xD;
+			serviceRate = scanner.nextFloat();&#xD;
+			serviceList.add(new Service(serviceCode,serviceName,serviceRate));&#xD;
+			System.out.println(&quot;\nWould you like to add another service [y/n] : &quot;);&#xD;
+			continueChoice = scanner.next().charAt(0);&#xD;
+			scanner.nextLine();&#xD;
+		}while(continueChoice == 'y');		&#xD;
+		return serviceList;&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLUnZIRdEe6N58E1oZYV2w" name="createProducts" specification="_tK8z8IRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLUnZYRdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tLUnZoRdEe6N58E1oZYV2w" type="_tKYMMIRdEe6N58E1oZYV2w" direction="return">
+                <name xsi:nil="true"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+		&#xD;
+		ArrayList&lt;Product> productList = new ArrayList&lt;Product>();&#xD;
+		char productContinueChoice;&#xD;
+		do {&#xD;
+		ArrayList&lt;Service> selectedServiceList = new ArrayList&lt;Service>();&#xD;
+		Scanner scanner = new Scanner(System.in);		&#xD;
+		System.out.println(&quot;\nEnter Product Code : &quot;);&#xD;
+		String productCode = scanner.nextLine();&#xD;
+		System.out.println(&quot;Enter Product Name : &quot;);&#xD;
+		String productName = scanner.nextLine();&#xD;
+		System.out.println(&quot;\nThe Services Available are : &quot;);&#xD;
+		System.out.println(&quot;Service Code &quot; + &quot; Service Name &quot; + &quot; Service Rate&quot;);&#xD;
+		for(Service service : serviceList)&#xD;
+			System.out.println(service.getServiceCode() + &quot;        &quot; + service.getServiceName() + &quot;        &quot; + service.getServiceRate());&#xD;
+		char serviceContinueChoice;&#xD;
+		do {&#xD;
+			System.out.println(&quot;\nEnter the Service Code you want to add : &quot;);&#xD;
+			String serviceCode = scanner.nextLine();&#xD;
+			for(Service service : serviceList)&#xD;
+				if(service.getServiceCode().compareTo(serviceCode)==0)&#xD;
+					selectedServiceList.add(service);&#xD;
+			System.out.println(&quot;Service Added. Do you want to add more services [y/n] : &quot;);&#xD;
+			serviceContinueChoice = scanner.next().charAt(0);&#xD;
+			scanner.nextLine();&#xD;
+		}while(serviceContinueChoice == 'y');&#xD;
+		System.out.println(&quot;\nThe services selected for this product are : &quot;);&#xD;
+		System.out.println(&quot;Service Code &quot; + &quot; Service Name &quot; + &quot; Service Rate&quot;);&#xD;
+		for(Service service : selectedServiceList)&#xD;
+			System.out.println(service.getServiceCode() + &quot;        &quot; + service.getServiceName() + &quot;        &quot; + service.getServiceRate());&#xD;
+		productList.add(new Product(productCode,productName,selectedServiceList));&#xD;
+		System.out.println(&quot;\nDo you want to add more products [y/n] : &quot;);&#xD;
+		productContinueChoice = scanner.next().charAt(0);&#xD;
+		}while(productContinueChoice == 'y');		&#xD;
+		return productList;&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tITIkIRdEe6N58E1oZYV2w" name="createServices" isStatic="true" method="_tLUnYoRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tK8M4IRdEe6N58E1oZYV2w" type="_tKYMMIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_tK8z8IRdEe6N58E1oZYV2w" name="createProducts" isStatic="true" method="_tLUnZIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tK8z8YRdEe6N58E1oZYV2w" name="serviceList" type="_tKYMMIRdEe6N58E1oZYV2w"/>
+              <ownedParameter xmi:id="_tK-CEIRdEe6N58E1oZYV2w" type="_tKYMMIRdEe6N58E1oZYV2w" direction="return"/>
+            </ownedOperation>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Association" xmi:id="_tLcjMIRdEe6N58E1oZYV2w" name="" memberEnd="_tLcjMYRdEe6N58E1oZYV2w _tLF94YRdEe6N58E1oZYV2w">
+            <ownedEnd xmi:id="_tLcjMYRdEe6N58E1oZYV2w" name="" type="_tINB8IRdEe6N58E1oZYV2w" association="_tLcjMIRdEe6N58E1oZYV2w"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_pksQMIRjEe6N58E1oZYV2w" name="get"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xZBvMIRjEe6N58E1oZYV2w" name="Account"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_0H5wQIRjEe6N58E1oZYV2w" name="g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_tHZwsIRdEe6N58E1oZYV2w" name="utility">
+          <packagedElement xmi:type="uml:Class" xmi:id="_tIZ2QIRdEe6N58E1oZYV2w" name="BankingUtility">
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_tLVOcIRdEe6N58E1oZYV2w" name="main" specification="_tIbEYIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tLVOcYRdEe6N58E1oZYV2w" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tLVOcoRdEe6N58E1oZYV2w" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>// TODO Auto-generated method stub&#xD;
+		&#xD;
+		ArrayList&lt;Service> serviceList = new ArrayList&lt;Service>();&#xD;
+		ArrayList&lt;Product> productList = new ArrayList&lt;Product>();&#xD;
+		Customer customer = null;&#xD;
+		Scanner scanner = new Scanner(System.in);&#xD;
+		int mainMenuChoice;&#xD;
+		do {&#xD;
+			System.out.println(&quot;\n******Welcome To Bank************\n1. Create Services\n2. Create Products\n3. Create Account\n4. Manage Accounts\n5. Transaction Bill\n6. Exit&quot;);&#xD;
+			System.out.println(&quot;\nEnter your choice : &quot;);&#xD;
+			mainMenuChoice = scanner.nextInt();&#xD;
+			switch(mainMenuChoice) {&#xD;
+			case 1 : &#xD;
+				serviceList = ProductConfiguration.createServices();&#xD;
+				break;&#xD;
+			case 2 :&#xD;
+				productList = ProductConfiguration.createProducts(serviceList);&#xD;
+				break;&#xD;
+			case 3 :				&#xD;
+				customer = CustomerAccountConfiguration.createCustomer(productList,customer);&#xD;
+				break;&#xD;
+			case 4 : &#xD;
+				AccountManager.manageAccount(customer);&#xD;
+				break;&#xD;
+			case 5 : &#xD;
+				CustomerAccountConfiguration.transaction(customer);&#xD;
+				break;				&#xD;
+			}&#xD;
+		}while(mainMenuChoice!=6);&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_tIbEYIRdEe6N58E1oZYV2w" name="main" isStatic="true" method="_tLVOcIRdEe6N58E1oZYV2w">
+              <ownedParameter xmi:id="_tIbEYYRdEe6N58E1oZYV2w" name="args">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tIbrcIRdEe6N58E1oZYV2w" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_tG8dsIRdEe6N58E1oZYV2w" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_tG9EwIRdEe6N58E1oZYV2w" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_tKYMMIRdEe6N58E1oZYV2w" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_tKhWIIRdEe6N58E1oZYV2w" name="Scanner"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_tHpBQIRdEe6N58E1oZYV2w">
+      <eAnnotations xmi:id="_tHsEkIRdEe6N58E1oZYV2w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:Generics xmi:id="_tIWL4IRdEe6N58E1oZYV2w" genericsValue="Service" base_Element="_tITIkIRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_tKYzQIRdEe6N58E1oZYV2w" base_Element="_tKYMMIRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_tKh9MIRdEe6N58E1oZYV2w" base_Element="_tKhWIIRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tKuxgIRdEe6N58E1oZYV2w" genericsValue="Service" base_Element="_tKs8U4RdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tKxNwIRdEe6N58E1oZYV2w" genericsValue="Account" base_Element="_tKv_ooRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tKzqAIRdEe6N58E1oZYV2w" genericsValue="Service" base_Element="_tKyb4YRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tK5JkIRdEe6N58E1oZYV2w" genericsValue="Service" base_Element="_tK3UY4RdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tK7l0IRdEe6N58E1oZYV2w" genericsValue="Product" base_Element="_tK6XsYRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tK9bAIRdEe6N58E1oZYV2w" genericsValue="Product" base_Element="_tK8z8IRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tK-pIIRdEe6N58E1oZYV2w" genericsValue="Service" base_Element="_tK8z8YRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tLC6kIRdEe6N58E1oZYV2w" genericsValue="Account" base_Element="_tLBscYRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tLEvwIRdEe6N58E1oZYV2w" genericsValue="Service" base_Element="_tLEIsIRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_tLHMAIRdEe6N58E1oZYV2w" genericsValue="Account" base_Element="_tLF94YRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tLHzEIRdEe6N58E1oZYV2w" base_Element="_tLF94YRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_tLIaIoRdEe6N58E1oZYV2w" base_Element="_tLIaIIRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_tLauAIRdEe6N58E1oZYV2w" base_Element="_tLZf4IRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_tLb8IIRdEe6N58E1oZYV2w" base_Element="_tLauAYRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_tLdxUIRdEe6N58E1oZYV2w" base_Element="_tLcjMIRdEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_pks3QIRjEe6N58E1oZYV2w" base_Element="_pksQMIRjEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_xZCWQIRjEe6N58E1oZYV2w" base_Element="_xZBvMIRjEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Reference xmi:id="_0H6XUIRjEe6N58E1oZYV2w" base_Element="_0H5wQIRjEe6N58E1oZYV2w"/>
+  <UMLLabProfile:Generics xmi:id="_HLP-B4RnEe6N58E1oZYV2w" genericsValue="Service" base_Element="_HLP-A4RnEe6N58E1oZYV2w"/>
+</xmi:XMI>
